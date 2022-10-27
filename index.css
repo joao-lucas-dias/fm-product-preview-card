@@ -1,109 +1,116 @@
 :root {
-  --primary-font-family: "Fraunces", serif;
-  --primary-font-weight: 700;
+    --primary-font-family: "Fraunces", serif;
+    --primary-font-weight: 700;
 
-  --secondary-font-family: "Montserrat", sans-serif;
-  --secondary-font-weight-medium: 500;
-  --secondary-font-weight-bold: 700;
+    --secondary-font-family: "Montserrat", sans-serif;
+    --secondary-font-weight-medium: 500;
+    --secondary-font-weight-bold: 700;
 
-  --primary-color-cyan: hsl(158, 36%, 37%);
-  --primary-color-cream: hsl(30, 38%, 92%);
+    --primary-color-cyan: hsl(158, 36%, 37%);
+    --primary-color-cream: hsl(30, 38%, 92%);
 
-  --neutral-color-darkblue: hsl(212, 21%, 14%);
-  --neutral-color-grayblue: hsl(228, 12%, 48%);
-  --neutral-color-white: hsl(0, 0%, 100%);
+    --neutral-color-darkblue: hsl(212, 21%, 14%);
+    --neutral-color-grayblue: hsl(228, 12%, 48%);
+    --neutral-color-white: hsl(0, 0%, 100%);
 }
 
 body {
-  background-color: var(--primary-color-cream);
-  padding: 1em 0.5em;
+    background-color: var(--primary-color-cream);
+    padding: 1em 0.5em;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--primary-font-family);
-  font-weight: var(--primary-font-weight);
+    font-family: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
 
-  line-height: 1;
+    line-height: 1;
 
-  color: var(--neutral-color-darkblue);
+    color: var(--neutral-color-darkblue);
 }
 
 p {
-  font-size: 14px;
-  font-family: var(--secondary-font-family);
-  font-weight: var(--secondary-font-weight-medium);
+    font-size: 14px;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--secondary-font-weight-medium);
 
-  line-height: 1.5;
+    line-height: 1.5;
 
-  color: var(--neutral-color-grayblue);
+    color: var(--neutral-color-grayblue);
 
-  margin: 0;
+    margin: 0;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  background-color: var(--neutral-color-white);
-  width: 100%;
-  height: 100%;
-  margin-bottom: 1em;
+    background-color: var(--neutral-color-white);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
 
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 .card > img {
-  width: 100%;
-  object-fit: cover;
+    content: url("./images/image-product-mobile.jpg");
+    width: 100%;
+    object-fit: cover;
 
-  border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .body {
-  padding: 1.5em;
+    padding: 1.5em;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-type {
-  text-transform: uppercase;
-  letter-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .product-price {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
-  justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
 }
 
 .product-price h1 {
-  color: var(--primary-color-cyan);
+    color: var(--primary-color-cyan);
 }
 
 .product-price p {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 
-  font-family: var(--secondary-font-family);
-  font-weight: var(--secondary-font-weight-bold);
-  padding: 1em;
+    font-family: var(--secondary-font-family);
+    font-weight: var(--secondary-font-weight-bold);
+    padding: 1em;
 
-  background-color: var(--primary-color-cyan);
-  color: var(--neutral-color-white);
+    background-color: var(--primary-color-cyan);
+    color: var(--neutral-color-white);
 
-  width: 100%;
-  border: none;
-  border-radius: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .card {
+        flex-direction: row;
+    }
 }
